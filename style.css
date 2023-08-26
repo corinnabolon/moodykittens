@@ -34,7 +34,13 @@ main{
 }
 #welcome{
   min-height: calc(95vh - (120px + 80px));
+  @media (mad-width: 600px) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
+
 footer{
   height: 120px;
 }
