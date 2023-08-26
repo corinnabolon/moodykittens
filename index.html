@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Moody Kittens | CodeWorks</title>
+  <link rel="shortcut icon" href="moody-logo.png" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css?family=Catamaran&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Quicksand:wght@400;600&family=Rock+Salt&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header class="bg-dark d-flex align-items-center p-1 space-between">
+    <img src="moody-logo.png" height="60" alt="Moody Kittens">
+    <button id="clearKittens1" class="hidden" onclick="clearKittensandRestart()">Clear All Kittens and Restart</button>
+    <span id="addKittenMessage" class="text-light hidden font-quicksand">Add a kitten!</span>
+    <form class="" id="new-kitten-name" onsubmit="addKitten(event)">
+      <div class="d-flex">
+        <input class="hidden" id="kitten-input" placeholder="Name" type="text" name="name" required>
+        <button class="btn-special hidden" id="kitten-button" type="submit">
+          /ᐠ｡ꞈ｡ᐟ\
+        </button>
+      </div>
+    </form>
+  </header>
+  <div class="bar">
+    <div id="notification" class="notification ishidden">You're over your kitten limit!</div>
+  </div>
+  <main class="container">
+    <div id="welcome" class="d-flex justify-content-center">
+      <div class="card p-2 text-center w-50">
+        <img src="moody-logo.png" height="250" alt="Moody Kittens">
+        <div class="mt-2">
+          <b class="text-center font-bungee">Welcome!</b>
+          <p>This is a game in which you create and raise kittens!</p>
+          <small>Watch out for their tempers or you might lose them!</small>
+          <br>
+          <button id="startButton" class="mb-1 mt-2" onclick="getStarted()">Get Started</button>
+          <br>
+          <button id="clearKittens2" class="danger hidden" onclick="clearKittens()">Clear All Kittens</button>
+        </div>
+      </div>
+    </div>
+    <div class="padding-sides margin-sides">
+      <div id="kittens" class="d-flex align-items-center flex-wrap">
+        </div>
+      </div>
+  </main>
+  <footer class="card bg-dark text-light p-2 d-flex align-items-center justify-content-center">
+    <small>Created with <span style="color: var(--primary)">&hearts;</span> by CodeWorks</small>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+
+</html>
