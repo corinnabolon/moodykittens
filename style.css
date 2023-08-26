@@ -316,6 +316,10 @@ button.btn-special:hover{
 
 .w-50{
   width: 50%;
+  @media (max-width: 600px) {
+    width: 100%;
+    max-width: 300px;
+  }
 }
 
 .text-center{
