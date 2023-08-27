@@ -299,6 +299,10 @@ button.btn-special:hover{
 .p-3{
   padding: 1.5em;
 }
+.p-sides{
+  padding-right: 4em;
+  padding-left: 4em;
+}
 
 .pt-1{
   padding-top: .5em;
