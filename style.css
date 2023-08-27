@@ -36,6 +36,7 @@ main{
   min-height: calc(95vh - (120px + 80px));
   @media (mad-width: 600px) {
     align-items: center;
+    padding: 1em;
   }
 }
 
