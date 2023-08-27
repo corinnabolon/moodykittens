@@ -233,6 +233,10 @@ button.btn-special:hover{
   font-weight: 800;
 }
 
+.d-table{
+  display: table;
+}
+
 .d-flex{
   display: flex;
   align-items: center;
