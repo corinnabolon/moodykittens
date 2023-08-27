@@ -50,8 +50,6 @@ function addKitten(event) {
     pic: kittenPic
   }
 
-  kittenImages.slice
-
   kittens.push(newKitten)
   setKittenMood(newKitten)
   saveKittens()
