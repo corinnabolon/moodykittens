@@ -34,10 +34,10 @@ main{
 }
 #welcome{
   min-height: calc(95vh - (120px + 80px));
-  @media (mad-width: 600px) {
+  /* @media (max-width: 600px) {
     align-items: center;
     padding: 1em;
-  }
+  } */
 }
 
 footer{
@@ -169,8 +169,10 @@ button.btn-special:hover{
   background-color: var(--light);
   padding: 1em;
   font-size: medium;
+  text-align: center;
   box-shadow: var(--shadow);
   border-radius: var(--corners);
+  margin-bottom: 30px;
 }
 
 .card.forkittens {
@@ -299,10 +301,6 @@ button.btn-special:hover{
 .p-3{
   padding: 1.5em;
 }
-.p-sides{
-  padding-right: 4em;
-  padding-left: 4em;
-}
 
 .pt-1{
   padding-top: .5em;
@@ -330,8 +328,10 @@ button.btn-special:hover{
 
 .w-50{
   width: 50%;
-  @media (max-width: 600px) {
-    width: 100%;
+  margin-left: 25%;
+  text-align: center;
+  /* @media (max-width: 600px) {
+    width: 100%; */
   }
 }
 
