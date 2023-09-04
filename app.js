@@ -99,14 +99,14 @@ function drawKittens() {
       kittensTemplate += `
       <div id="kitten-card" class="card forkittens m-3 text-center kitten">
         <span class="kitten img ${kitten.mood}" id="kittenPic">${kitten.pic}</span>
-        <div class="text-left m-3 font-quicksand">
+        <div class="kitten-info text-left font-quicksand">
           <p>Name: ${kitten.name}</p>
           <p>Mood: ${kitten.mood}</p>
           <p>Affection: ${kitten.affection}</p>
         </div>
-        <div class="d-flex space-around">
-          <button class="danger" onclick="pet('${kitten.id}')">PET</button>
-          <button onclick="catnip('${kitten.id}')">CATNIP</button>
+        <div class="d-flex button-reset">
+          <button class="danger petcatnip" onclick="pet('${kitten.id}')">PET</button>
+          <button class="petcatnip" onclick="catnip('${kitten.id}')">CATNIP</button>
         </div>
       </div>
     `}
@@ -203,7 +203,8 @@ function clearKittensandRestart(){
  * list of kittens to the page. Good Luck
  */
 function getStarted() {
-  document.getElementById("welcome").remove();
+  document.getElementById("welcome").remove()
+  document.getElementById("kittens").classList.remove("hidden")
   if (kittens.length === 12) {
     showNotification(overLimitMessage)
     document.getElementById("kitten-button").classList.add("ishidden")

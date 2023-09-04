@@ -13,8 +13,8 @@
 </head>
 
 <body>
-  <header class="bg-dark d-flex align-items-center p-1 space-between">
-    <img src="moody-logo.png" height="60" alt="Moody Kittens">
+  <header class="bg-dark d-flex align-items-center space-between">
+    <img src="moody-logo.png" class="moody" height="60" alt="Moody Kittens">
     <button id="clearKittens1" class="hidden" onclick="clearKittensandRestart()">Clear All Kittens and Restart</button>
     <span id="addKittenMessage" class="text-light hidden font-quicksand">Add a kitten!</span>
     <form class="" id="new-kitten-name" onsubmit="addKitten(event)">
@@ -27,11 +27,11 @@
     </form>
   </header>
   <div class="bar">
-    <div id="notification" class="notification ishidden">You're over your kitten limit!</div>
+    <div id="notification" class="ishidden notification"></div>
   </div>
   <main class="container">
-    <div id="welcome">  
-      <div class="card w-50">
+    <div id="welcome" class="d-flex justify-content-center">  
+      <div class="card">
         <img src="moody-logo.png" height="250" alt="Moody Kittens">
         <div class="mt-2">
           <b class="text-center font-bungee">Welcome!</b>
@@ -44,12 +44,13 @@
         </div>
       </div>
     </div>
-    <div class="padding-sides margin-sides">
-      <div id="kittens" class="d-flex align-items-center flex-wrap">
+    <div class="p-2">
+      <div id="kittens" class="hidden d-flex flex-wrap">
         </div>
       </div>
   </main>
-  <footer class="card bg-dark text-light p-2 d-flex align-items-center justify-content-center">
+
+  <footer class="bg-dark text-light d-flex align-items-center justify-content-center">
     <small>Created with <span style="color: var(--primary)">&hearts;</span> by CodeWorks</small>
   </footer>
 
